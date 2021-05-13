@@ -1,7 +1,7 @@
-# jekyll-rtd-theme
+# index
 
-![CI](https://github.com/rundocs/jekyll-rtd-theme/workflows/CI/badge.svg?branch=develop)
-![jsDelivr](https://data.jsdelivr.com/v1/package/gh/rundocs/jekyll-rtd-theme/badge)
+[페이지 설정](/underconstruction/)
+
 
 Just another documentation theme compatible with GitHub Pages
 

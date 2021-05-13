@@ -8,7 +8,7 @@ sort: 8
 Hey @saowang, what do you think of this?
 ```
 
-Hey @saowang, what do you think of this?
+Hey @urfish, what do you think of this?
 
 ```tip
 Set config `plugins: [jekyll-mentions]`
