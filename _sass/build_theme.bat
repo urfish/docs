@@ -1,4 +1,4 @@
 @echo off
 scss --style compressed theme.scss:theme.min.css | more
-copy theme.min.css ..\assets\css
+copy theme.min.* ..\assets\css
 

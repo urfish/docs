@@ -1,5 +1,11 @@
 ---
 sort: 1
+text: |
+  ABCDEFG abcedfg
+  페이지 상단에 위치한 텍스트로
+  page.text 와 같은 페이지내 변수로 사용가능
+  一二三四五
+  ‘?’“!”(%)[#]{@}/&\<-+÷×=>®©$€£¥¢:;,.*
 ---
 
 # Markdown Elements
@@ -50,8 +56,70 @@ code...
 code...
 ```
 
+## 카드 (Toast)
+> Toast 1
+> \`\`\`keyword 
+>contents
+>\`\`\`
 
+<code>
+  note, tip, warning, danger
+</code>
 
+note
+```note 
+content
+```
+
+tip
+```tip 
+content
+```
+
+warning
+```warning 
+content
+```
+
+danger
+```danger 
+content
+```
+
+## 카드섹션 (Toast2)
+> Toast 2
+> \`\`\`keyword 
+>contents
+>\`\`\`
+
+<code>
+  note2, tip2, warning2, danger2, loading
+</code>
+
+note2
+```note2
+content
+```
+
+tip2
+```tip2
+content
+```
+
+warning2
+```warning2
+content
+```
+
+danger2
+```danger2
+content
+```
+
+loading
+```loading
+content
+```
 ## 헤딩
 헤딩은 6단계까지 내려간다. 
 # Header 1
@@ -219,3 +287,162 @@ char foo =
 ```
 
 
+## Mermaid
+    ```mermaid
+    graph TB
+        c1-->a2
+        subgraph one
+        a1-->a2
+        end
+        subgraph two
+        b1-->b2
+        end
+        subgraph three
+        c1-->c2
+        end
+    ```
+
+```mermaid
+graph TB
+    c1-->a2
+    subgraph one
+    a1-->a2
+    end
+    subgraph two
+    b1-->b2
+    end
+    subgraph three
+    c1-->c2
+    end
+```
+    ```mermaid
+    graph TD;
+        A-->B;
+        A-->C;
+        B-->D;
+        C-->D;
+    ```
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+    ```mermaid
+    classDiagram
+    classA <|-- classB
+    classC *-- classD
+    classE o-- classF
+    classG <-- classH
+    classI -- classJ
+    classK <.. classL
+    classM <|.. classN
+    classO .. classP
+    ```
+
+```mermaid
+classDiagram
+classA <|-- classB
+classC *-- classD
+classE o-- classF
+classG <-- classH
+classI -- classJ
+classK <.. classL
+classM <|.. classN
+classO .. classP
+```
+
+    ```mermaid
+    erDiagram
+        CUSTOMER ||--o{ ORDER : places
+        ORDER ||--|{ LINE-ITEM : contains
+        CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+    ```
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
+
+## 이모티콘 (이모지)
+   :code: 
+
+* 아래 이모티콘 클릭하고 그냥 붙여넣기 하는게 편함
+
+## 아바타 
+
+```
+{% raw %}{% avatar urfish %}{% endraw %}
+```
+
+{% avatar urfish %}
+
+# 멘션
+
+
+```
+Hey @urfish, what do you think of this?
+```
+
+Hey @urfish, what do you think of this?
+
+```tip
+Set config `plugins: [jekyll-mentions]`
+
+For documentation, see: [https://github.com/jekyll/jekyll-mentions](https://github.com/jekyll/jekyll-mentions)
+```
+
+## 폰트
+
+`{:.font-mono}`
+
+```
+{{ page.text -}}
+```
+
+`{:.font-body}`
+
+{:.font-body}
+{{ page.text }}
+
+`{:.font-head}`
+
+{:.font-head}
+{{ page.text }}
+
+## font-awesome
+
+```html
+<i class="fa fa-check-circle text-green">checked</i>
+<i class="fa fa-battery-quarter text-red">battery</i>
+```
+
+<i class="fa fa-check-circle text-green">checked</i>
+<i class="fa fa-battery-quarter text-red">battery</i>
+
+## 수식
+
+$$
+\begin{aligned}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{aligned}
+$$
+
+```note
+보다 많은 정보, see: [https://kramdown.gettalong.org/syntax.html#math-blocks](https://kramdown.gettalong.org/syntax.html#math-blocks)
+```

@@ -22,5 +22,5 @@ $$
 $$
 
 ```note
-For documentation, see: https://kramdown.gettalong.org/syntax.html#math-blocks
+For documentation, see: [https://kramdown.gettalong.org/syntax.html#math-blocks](https://kramdown.gettalong.org/syntax.html#math-blocks)
 ```

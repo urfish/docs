@@ -25,12 +25,12 @@
 {%- assign schema_surl = page.url  | absolute_url | xml_escape -%}
 
 {% comment %} debug {% endcomment %}
-{%- if site.debug -%}
+{%- if ui.debug -%}
     {%- assign base = site.baseurl -%}
 {%- else -%}
     {%- assign base = "https://urfish.github.io/docs" | append: theme_alias -%}
 {%- endif -%}
-
+{%- assign baselocal = "http://localhost:4000" | append: theme_alias -%}
 {% comment %} extra {% endcomment %}
 {%- capture extra_scss -%}
     {%- include extra/styles.scss -%} {{- site.scss -}}
