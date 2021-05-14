@@ -4,35 +4,35 @@ text: |
   
 ---
 # Repo 
-## Repo 명령어
+## 1 Repo 명령어
 
 Repo는 여러 저장소 전체에 걸친 작업을 단순화하여 Git를 보완합니다.  
-Repo 및 Git 간의 관계에 관한 설명은 소스 제어 도구를 참조하세요. 
- Repo에 관한 자세한 내용은 Repo README를 참조하세요.
+Repo 및 Git 간의 관계에 관한 설명은 [소스 제어 도구](https://source.android.google.cn/setup/develop?hl=ko)를 참조하세요. 
+ Repo에 관한 자세한 내용은 Repo [README](https://gerrit.googlesource.com/git-repo/+/refs/heads/master/README.md)를 참조하세요.
 
 Repo는 다음 형식을 취합니다.
 
-```
+```javascript
 repo command options
 ```
 선택적 요소는 대괄호 [ ] 안에 표시됩니다. 예를 들어, 많은 명령어가 project-list를 인수로 취합니다. 다음과 같이 project-list를 프로젝트의 이름 목록 또는 로컬 소스 디렉터리 경로 목록으로 지정할 수 있습니다.
 
-```
+```repo
 repo sync [project0 project1 ... projectn]
 repo sync [/path/to/project0 ... /path/to/projectn]
 ```
 
-## Repo 도움말
+## 2 Repo 도움말
 이 페이지는 단순히 주요 옵션을 강조합니다.  
 전체적인 세부정보는 명령줄 도움말을 참조하세요.  
 Repo가 설치되면 다음을 실행하여 모든 명령어의 요약과 함께 시작되는 최신 문서를 찾을 수 있습니다.
 
-```
+```repo
 repo help
 ```
 Repo 트리 내에서 다음을 실행하여 모든 명령어에 관한 세부정보를 확인할 수 있습니다.
 
-```
+```repo
 repo help command
 ```
 예를 들어, 다음 명령어는 현재 디렉터리에서 Repo를 초기화하는 Repo의 init 인수에 관한 설명과 옵션 목록을 반환합니다 (세부정보는 init를 참조하세요.)
