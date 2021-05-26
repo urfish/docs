@@ -21,8 +21,17 @@
 ---
     rpm -qa *-release
 ### cpu 정보 확인
-    
+    /proc/cpuinfo
+---
+    lscpu
+---
+    hardinfo
+---
+    lshw
+---
+    nproc
+---
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MTYwMDQ1NSwyMzgwNjM1MjhdfQ==
+eyJoaXN0b3J5IjpbLTMzNTMxNjg5NiwyMzgwNjM1MjhdfQ==
 -->
