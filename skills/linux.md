@@ -2,20 +2,18 @@
 ## CommandList
 ### 32비트 64 비트확인
     getconf LONG_BIT  
-
     arch
-<code>uname -m</code>
-<code>echo $HOSTTYPE</code>
-<code>lscpu | grep ^Arch</code>
+    uname -m
+    echo $HOSTTYPE
+    lscpu | grep ^Arch
 
 ### 리눅스 버전확인
 #### 배포판 버전확인
-
     grep . /etc/*-release
-
+    cat /etc/*-release | uniq
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyODY5ODI5OF19
+eyJoaXN0b3J5IjpbMjM4MDYzNTI4XX0=
 -->
