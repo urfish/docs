@@ -31,7 +31,15 @@
 ---
     nproc
 ---
+    dmidecode
+---
+    cpuid
+---
+    inxi
+#### cpu 소켓 정보 확인
+    lscpu | grep Socket
+        
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNTMxNjg5NiwyMzgwNjM1MjhdfQ==
+eyJoaXN0b3J5IjpbLTk2MTE5Mzg4MiwyMzgwNjM1MjhdfQ==
 -->
