@@ -36,6 +36,7 @@
     cpuid
 ---
     inxi  
+ 
 #### cpu 소켓 정보 확인
     lscpu | grep Socket
 #### 리눅스가 VM인지 아닌지 확인
@@ -55,6 +56,6 @@
             
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NjQ1MTAwNywyMDE2OTE4NDAxLDIzOD
-A2MzUyOF19
+eyJoaXN0b3J5IjpbLTE2NjUzNTUwMDcsMjAxNjkxODQwMSwyMz
+gwNjM1MjhdfQ==
 -->
