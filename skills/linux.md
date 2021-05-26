@@ -43,9 +43,17 @@
 ---
     lscpu | grep Hypervisor
 ---
+    demicode | head -5
+    demicode -s system-product-name
+---
+    ethtool -i eth0 | grep driver
+---
+    fdisk -l
+---
+    
     
             
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkwMTYzMzkzLDIzODA2MzUyOF19
+eyJoaXN0b3J5IjpbMjAxNjkxODQwMSwyMzgwNjM1MjhdfQ==
 -->
